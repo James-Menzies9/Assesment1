@@ -1,4 +1,5 @@
-import easygui as e 
+import easygui as e
+import random 
 
 e.msgbox ("Welcome to the quiz")
 print ("Welcome to the quiz")
@@ -28,28 +29,54 @@ if Question1 == Answer1:
 else:
     e.msgbox("Incorrect")
     print("Incorrect")
-msgbox("New score",Score)
+e.msgbox("New score",Score)
 print(Score)
 
-Answer2 = 
-#e.msgbox("Question 2")
-#print("Question 2")
-
+random = random.randint (1,10)
+Answer2 = random
+e.msgbox("Question 2")
+print("Question 2")
+Question2 = e.integerbox("Pick a number between 1 and 10","Question 2")
+if Question2 == Answer2:
+    Score +=1
+    e.msgbox("Correct")
+    print("correct")
+else:
+    e.msgbox("Incorrect")
+    print("incorrect")
+e.msgbox("New score",Score)
+print(Score)
 #e.msgbox("Question 3")
 #print("Question 3")
 
+e.msgbox("New score",Score)
+print(Score)
 #e.msgbox("Question 4")
 #print("Question 4")
 
+e.msgbox("New score",Score)
+print(Score)
 #e.msgbox("Question 5")
 #print("Question 5")
 
+e.msgbox("New score",Score)
+print(Score)
 #e.msgbox("Question 6")
 #print("Question 6")
 
+e.msgbox("New score",Score)
+print(Score)
 #e.msgbox("Question 7")
 #print("Question 7")
 
+e.msgbox("New score",Score)
+print(Score)
 #e.msgbox("Question 8")
 #print("Question 8")
 
+e.msgbox("New score",Score)
+print(Score)
+
+if Score == 8:
+    e.msgbox("Well done you got all the question correct")
+elif score < 4 and > 8:
