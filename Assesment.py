@@ -64,15 +64,34 @@ else:
     print("Incorrect")
     print(Score)
 
+Answer4 = str("2/9/1945") and str("2 September 1945")
+e.msgbox("Question 4")
+print("Question 4")
 
-#e.msgbox("Question 4")
-#print("Question 4")
+Question4 = e.enterbox("When did World War 2 official end")
+if str(Question4) == Answer4:
+    e.msgbox("Correct")
+    print("Correct")
+else:
+    e.msgbox("Incorrect")
+    print("Incorrect")
+    print(Score)
 
 e.msgbox("New score",Score)
 print(Score)
 
-#e.msgbox("Question 5")
-#print("Question 5")
+Answer5 = str("Elon Musk") and str("Elon")
+e.msgbox("Question 5")
+print("Question 5")
+
+Question5 = e.enterbox("Who owns SpaceX")
+if Question5 == Answer5:
+    e.msgbox("Correct")
+    print("Correct")
+else:
+    e.msgbox("Incorrect")
+    print("Incorrect")
+    print(Score)
 
 e.msgbox("New score",Score)
 print(Score)
