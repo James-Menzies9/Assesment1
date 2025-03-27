@@ -72,6 +72,7 @@ Question4 = e.enterbox("When did World War 2 official end")
 if str(Question4) == Answer4:
     e.msgbox("Correct")
     print("Correct")
+    Score +=1
 else:
     e.msgbox("Incorrect")
     print("Incorrect")
@@ -80,7 +81,7 @@ else:
 e.msgbox("New score",Score)
 print(Score)
 
-Answer5 = str("Elon Musk") and str("Elon")
+Answer5 ="Elon Musk"
 e.msgbox("Question 5")
 print("Question 5")
 
@@ -88,19 +89,29 @@ Question5 = e.enterbox("Who owns SpaceX")
 if Question5 == Answer5:
     e.msgbox("Correct")
     print("Correct")
+    Score +=1
 else:
     e.msgbox("Incorrect")
     print("Incorrect")
-    print(Score)
 
 e.msgbox("New score",Score)
 print(Score)
 
-#e.msgbox("Question 6")
-#print("Question 6")
+Answer6 =
+e.msgbox("Question 6")
+print("Question 6")
 
+Question6 = e.buttonbox("","Question 6",choices=("","",""))
 e.msgbox("New score",Score)
 print(Score)
+if Question6 == Answer6:
+    e.msgbox("Correct")
+    print("Correct")
+    Score +=1
+else:
+    e.msgbox("Incorrect")
+    print("Incorrect")
+
 
 #e.msgbox("Question 7")
 #print("Question 7")
