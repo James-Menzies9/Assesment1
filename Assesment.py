@@ -97,7 +97,7 @@ else:
 e.msgbox("New score",Score)
 print(Score)
 
-Answer6 =
+Answer6 =""
 e.msgbox("Question 6")
 print("Question 6")
 
@@ -112,15 +112,41 @@ else:
     e.msgbox("Incorrect")
     print("Incorrect")
 
+e.msgbox("New score",Score)
+print(Score)
 
-#e.msgbox("Question 7")
-#print("Question 7")
+Answer7 =""
+e.msgbox("Question 7")
+print("Question 7")
+
+Question7 = e.buttonbox("","Question 7",choices=("","",""))
+
+if Question7 == Answer7:
+    e.msgbox("Correct")
+    print("Correct")
+    Score +=1
+else:
+    e.msgbox("Incorrect")
+    print("Incorrect")
 
 e.msgbox("New score",Score)
 print(Score)
 
-#e.msgbox("Question 8")
-#print("Question 8")
+Answer8 =""
+e.msgbox("Question 8")
+print("Question 8")
+
+Question8 = e.buttonbox("","Question 8",choices=("","",""))
+e.msgbox("New score",Score)
+print(Score)
+
+if Question8 == Answer8:
+    e.msgbox("Correct")
+    print("Correct")
+    Score +=1
+else:
+    e.msgbox("Incorrect")
+    print("Incorrect")
 
 e.msgbox("New score",Score)
 print(Score)
