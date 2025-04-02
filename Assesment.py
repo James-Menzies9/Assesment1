@@ -7,13 +7,20 @@ print ("Welcome to the quiz")
 player_age=e.integerbox("How old are you","Age")
 print(player_age)
 
-if player_age < 12:
-    e.msgbox("you are to young to take the quiz")
-    print("you are to young to take the quiz")
-else:
+if player_age  >15  >18:
     e.msgbox("you can now continue to take the quiz")
     print("you can now continue to take the quiz")
-
+else:
+    while True:
+        if player_age <15: 
+         e.msgbox("you are to young to take the quiz")
+         print("you are to young to take the quiz")
+        else:
+            e.msgbox("you are to old to play this game")
+            print("you are to old to play this game")
+            
+player_name = e.enterbox("Whats your name?")
+print(player_name)
 Score = 0 
 e.msgbox("There is a total of 8 question you have to answer")
 print("There is a total of 8 question you have to answer")
@@ -97,13 +104,11 @@ else:
 e.msgbox("New score",Score)
 print(Score)
 
-Answer6 =""
+Answer6 ="automatable manufacturer"
 e.msgbox("Question 6")
 print("Question 6")
 
-Question6 = e.buttonbox("","Question 6",choices=("","",""))
-e.msgbox("New score",Score)
-print(Score)
+Question6 = e.buttonbox("What is a BMW","Question 6",choices=("Pickup truck","automatable manufacturer","True supercar"))
 if Question6 == Answer6:
     e.msgbox("Correct")
     print("Correct")
@@ -115,11 +120,11 @@ else:
 e.msgbox("New score",Score)
 print(Score)
 
-Answer7 =""
+Answer7 ="The land"
 e.msgbox("Question 7")
 print("Question 7")
 
-Question7 = e.buttonbox("","Question 7",choices=("","",""))
+Question7 = e.buttonbox("Where does Mcdonalds networth come from","Question 7",choices=("The land","The food","Sponsers"))
 
 if Question7 == Answer7:
     e.msgbox("Correct")
@@ -151,6 +156,8 @@ else:
 e.msgbox("New score",Score)
 print(Score)
 
+e.msgbox("thanks for playing " + player_name)
+print("thanks for playing " + player_name)
 if Score == 8:
     e.msgbox("Well done you got all the question correct")
 elif score < 4:
