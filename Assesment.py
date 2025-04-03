@@ -124,7 +124,7 @@ Answer7 ="The land"
 e.msgbox("Question 7")
 print("Question 7")
 
-Question7 = e.buttonbox("Where does Mcdonalds networth come from","Question 7",choices=("The land","The food","Sponsers"))
+Question7 = e.buttonbox("Where does Mcdonalds gets most of its networth mfrom","Question 7",choices=("The land","The food","Sponsers"))
 
 if Question7 == Answer7:
     e.msgbox("Correct")
@@ -137,11 +137,11 @@ else:
 e.msgbox("New score",Score)
 print(Score)
 
-Answer8 =""
+Answer8 ="4pm"
 e.msgbox("Question 8")
 print("Question 8")
 
-Question8 = e.buttonbox("","Question 8",choices=("","",""))
+Question8 = e.buttonbox("What time is 1600 in 12 hour time","Question 8",choices=("6am","2pm","4pm"))
 e.msgbox("New score",Score)
 print(Score)
 
