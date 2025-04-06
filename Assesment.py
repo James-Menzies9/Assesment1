@@ -11,13 +11,10 @@ if player_age  >15  >18:
     e.msgbox("you can now continue to take the quiz")
     print("you can now continue to take the quiz")
 else:
-    while True:
-        if player_age <15: 
-         e.msgbox("you are to young to take the quiz")
-         print("you are to young to take the quiz")
-        else:
-            e.msgbox("you are to old to play this game")
-            print("you are to old to play this game")
+    while True: 
+         e.msgbox("you can not take the quiz take the quiz")
+         print("you can not take the quiz")
+        
             
 player_name = e.enterbox("Whats your name?")
 print(player_name)
@@ -124,7 +121,7 @@ Answer7 ="The land"
 e.msgbox("Question 7")
 print("Question 7")
 
-Question7 = e.buttonbox("Where does Mcdonalds gets most of its networth mfrom","Question 7",choices=("The land","The food","Sponsers"))
+Question7 = e.buttonbox("Where does Mcdonalds gets most of its networth from","Question 7",choices=("The land","The food","Sponsers"))
 
 if Question7 == Answer7:
     e.msgbox("Correct")
