@@ -17,6 +17,7 @@ if 15 <= player_age <= 18:
     e.msgbox("You can now continue to take the quiz")
     print("You can now continue to take the quiz")
 else:
+    #keeps you in an endless loop
     while True:
         e.msgbox("You can't play this game")           
     
@@ -73,6 +74,7 @@ while True:
             print("Incorrect")
             print(score)
         e.msgbox( score)
+        #Turns number into strings so theres no math calculation
         Answer4 = str("2/9/1945") and str("2 September 1945")
         e.msgbox("Question 4")
         print("Question 4")
